@@ -26,10 +26,10 @@ class Processor {
         let wordsCounter = 0;
 
         wordsArr.forEach((arr) => {
-            let indexOfNull = arr.indexOf("");
+            let emptyIndex = arr.indexOf("");
 
-            if (indexOfNull !== -1) {
-                arr.splice(indexOfNull, 1);
+            if (emptyIndex !== -1) {
+                arr.splice(emptyIndex, 1);
             }
 
             wordsCounter += arr.length;
